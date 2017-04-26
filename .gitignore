@@ -1,0 +1,10 @@
+node_modules/*
+config.js
+.nodemonignore
+.sass-cache
+.tmp
+.env
+
+# IDE specific
+*.iml
+.idea
