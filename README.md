@@ -1,6 +1,6 @@
-# [Angular-Drywall](http://arthurkao.github.io/angular-drywall)
+# [Tuition](https://github.com/vikassatpute/tuition.git)
 
-[![Build Status](https://travis-ci.org/arthurkao/angular-drywall.svg?branch=master)](https://travis-ci.org/arthurkao/angular-drywall)
+[![Build Status](https://travis-ci.org/arthurkao/Tuition.svg?branch=master)](https://travis-ci.org/arthurkao/Tuition)
 
 A website and user system, implemented with [MongoDB](https://www.mongodb.org/), [Express](http://expressjs.com/), [AngularJS](https://angularjs.org/) and [Node.js](https://nodejs.org/), a.k.a MEAN stack.
 Inspired by and forked from [Drywall](https://github.com/jedireza/drywall).
@@ -8,7 +8,7 @@ Inspired by and forked from [Drywall](https://github.com/jedireza/drywall).
 ## Features
 
  - Versatility because you can
-    - Hack your next awesome MEAN stack web app on top of [Angular-Drywall](http://arthurkao.github.io/angular-drywall), or
+    - Hack your next awesome MEAN stack web app on top of [Tuition](), or
     - Use only the client as a non-trivial AngularJS project starter, or
     - Use only the sever as a pure User Management JSON API server.
  - Stand alone RESTful API service capable of serving any http clients, including iOS and Android app.
@@ -19,7 +19,7 @@ Inspired by and forked from [Drywall](https://github.com/jedireza/drywall).
 
 ## Technology
 
-[Angular-Drywall](http://arthurkao.github.io/angular-drywall)'s backend is pure Node.js RESTful API Server that renders no html pages . Front-end is built with [AngularJS](https://angularjs.org/), [Bootstrap](https://angular-ui.github.io/bootstrap/) and [SASS](http://sass-lang.com/).
+[Tuition](http://arthurkao.github.io/Tuition)'s backend is pure Node.js RESTful API Server that renders no html pages . Front-end is built with [AngularJS](https://angularjs.org/), [Bootstrap](https://angular-ui.github.io/bootstrap/) and [SASS](http://sass-lang.com/).
 [Grunt](http://gruntjs.com/) manages various development, testing and production build tasks.
 
 | On The Server  | On The Client | Development |
@@ -33,7 +33,7 @@ Inspired by and forked from [Drywall](https://github.com/jedireza/drywall).
 
 ## Live demo
 
-[http://angular-drywall.arthurkao.io](http://angular-drywall.arthurkao.io)
+[http://Tuition.arthurkao.io](http://Tuition.arthurkao.io)
 Hosted on AWS
 
 
@@ -55,7 +55,7 @@ page](https://github.com/jedireza/drywall/wiki/bcrypt-Installation-Trouble).
 
 ## Installation
 ```bash
-$ git clone https://github.com/arthurkao/angular-drywall.git && cd ./angular-drywall
+$ git clone https://github.com/arthurkao/Tuition.git && cd ./Tuition
 $ npm install
 $ cd client && bower install && cd ..
 ```
@@ -95,7 +95,7 @@ $ grunt
 # [nodemon] starting `node app.js`
 ```
 
-Now [Angular-Drywall](http://arthurkao.github.io/angular-drywall) should be up and running at `http://localhost:3000`.
+Now [Tuition](http://arthurkao.github.io/Tuition) should be up and running at `http://localhost:3000`.
 
 Login. Customize. Enjoy.
 
@@ -117,7 +117,7 @@ and relevant version details such as:
 ```bash
 $ npm version
 
-#{ 'angular-drywall': '0.1.1,
+#{ 'Tuition': '0.1.1,
 #  http_parser: '1.0',
 #  node: '0.10.29',
 #  v8: '3.14.5.9',
