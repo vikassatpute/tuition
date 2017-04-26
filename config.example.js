@@ -5,8 +5,8 @@ exports.port = process.env.PORT || 3000;
 exports.mongodb = {
   uri: process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || '{{MONGO_URI}}'
 };
-exports.companyName = 'Arthur Kao';
-exports.projectName = 'Angular Drywall';
+exports.companyName = 'Tuition';
+exports.projectName = 'Tuition';
 exports.systemEmail = '{{ADMIN_EMAIL}}';
 exports.cryptoKey = 'k3yb0ardc4t';
 exports.loginAttempts = {
