@@ -277,7 +277,7 @@ workflow.on('complete', function(){
   if(workflow.db){
     workflow.db.close();
   }
-  console.log('=====Angular-Drywall initialization complete=====');
+  console.log('=====Tuition initialization complete=====');
   process.exit(0);
 });
 

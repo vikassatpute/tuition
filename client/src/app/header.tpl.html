@@ -18,6 +18,7 @@
                 <li ng-if="!isAuthenticated()" ng-class="{active: isActive('/about')}"><a href="/about">About</a></li>
                 <li ng-if="!isAuthenticated()" ng-class="{active: isActive('/signup')}"><a href="/signup">Sign Up</a></li>
                 <li ng-if="!isAuthenticated()" ng-class="{active: isActive('/contact')}"><a href="/contact">Contact</a></li>
+                <li ng-if="!isAuthenticated()" ng-class="{active: isActive('/classes')}"><a href="/classes">Class</a></li>
                 <li ng-if="isAuthenticated()" ng-class="{active: isActive('/account')}"><a href="/account">My Account</a></li>
                 <li ng-if="isAuthenticated()" ng-class="{active: isActive('/account/settings')}"><a href="/account/settings">Settings</a></li>
             </ul>
@@ -41,6 +42,15 @@
                 <span class="icon-bar"></span>
             </button>
         </div>
+        <ul class="nav navbar-nav">
+            <li class="dropdown" dropdown >
+                <a href="#" class="dropdown-toggle navbar-dropdown-admin" dropdown-toggle>Classes&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/admin/classes">View All</a></li>
+                    <li><a href="/admin/classes/add">Add New Class</a></li>
+                </ul>
+            </li>
+        </ul>
         <div class="navbar-collapse collapse" collapse="adminMenuCollapsed">
             <ul class="nav navbar-nav">
                 <li class="dropdown" dropdown is-open="status.isopen">
@@ -57,6 +67,13 @@
                         <li><a href="/admin/admin-groups" ng-click="closeAdminMenu()">Admin Groups</a></li>
                     </ul>
                 </li>
+                <!-- <li class="dropdown" dropdown is-open="status.isopen">
+                    <a href="#" class="dropdown-toggle navbar-dropdown-admin" dropdown-toggle>Classes&nbsp;<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/admin/classes">View All</a></li>
+                        <li><a href="/admin/classes/add">Add New Class</a></li>
+                    </ul>
+                </li> -->
             </ul>
             <form name="form" class="navbar-form navbar-right">
                 <div class="dropdown" dropdown is-open="resultIsOpen">
