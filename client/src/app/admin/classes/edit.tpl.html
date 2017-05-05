@@ -1,0 +1,31 @@
+<div class="row" id="admin-edit-class" ng-init="getClass()">
+    <div class="col-xs-12">
+        <div class="page-header">
+            <h1><a ng-href="/admin/classes/add">Add</a></h1>
+        </div>
+        <form name="addClassForm" ng-submit="editClass()">
+	        <fieldset>
+            <div class="form-group" >
+                <label class="control-label">Title:</label>
+                <input type="text" name="title" id="title" class="form-control" ng-model="classObj.title" required>
+            </div>
+            <div class="form-group" >
+                <label class="control-label">Description:</label>
+                <input type="text" name="description" id="description" class="form-control" ng-model="classObj.description">
+            </div>
+            <div class="form-group" >
+                <label class="control-label">Image Url:</label>
+                <input type="text" name="image_url" id="image_url" class="form-control" ng-model="classObj.image_url">
+            </div>
+            <div class="form-group" >
+                <label class="control-label">Address:</label>
+                <input type="text" name="address" id="address" class="form-control" ng-model="classObj.address">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+	        </fieldset>
+        </form>
+    </div>
+</div>
+
