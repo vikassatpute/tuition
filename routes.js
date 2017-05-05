@@ -10,6 +10,7 @@ var adminAdministrator = require('./service/admin/administrator');
 var adminGroup = require('./service/admin/admin-group');
 var adminStatus = require('./service/admin/status');
 var adminCategory = require('./service/admin/category');
+var adminClasses = require('./service/admin/classes');
 
 function useAngular(req, res, next){
   res.sendFile(require('path').join(__dirname, './client/dist/index.html'));
@@ -149,6 +150,13 @@ exports = module.exports = function(app, passport) {
 
   //admin > search
   app.get('/api/admin/search', admin.search);
+  //admin > classes
+  app.get('/api/classes', adminClasses.find);
+  app.get('/api/admin/classes', adminClasses.find);
+  app.get('/api/admin/classes/edit/:id', adminClasses.findById);
+  app.put('/api/admin/classes/edit/:id', adminClasses.update);
+  app.post('/api/admin/classes/add', adminClasses.addClass);
+  
 
   //******** END OF NEW JSON API ********
 
@@ -218,6 +226,13 @@ exports = module.exports = function(app, passport) {
   //admin > categories
   app.get('/admin/categories', useAngular);
   app.get('/admin/categories/:id', useAngular);
+
+  //admin > classes
+  app.get('/classes', useAngular);
+  app.get('/admin/classes', useAngular);
+  app.get('/admin/classes/add', useAngular);
+  app.get('/admin/classes/edit/:id', useAngular);
+
 
   //other routes not found nor begin with /api is handled by Angular
   app.all(/^(?!\/api).*$/, useAngular);
