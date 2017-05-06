@@ -29,6 +29,7 @@ var classesService = {
       description: req.body.description,
       image_url: req.body.image_url,
       address: req.body.address,
+      active: req.body.active
     }
     var options = { new: true };
     req.app.db.models.Classes.findByIdAndUpdate(req.params.id, fieldsToSet, options, function(err, classesService) {
