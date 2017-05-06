@@ -15,6 +15,7 @@ exports = module.exports = function(app, mongoose) {
     map: { type: String, default:''},
     offer: { type: String, default:''},
     active: { type: String, default:'no'},
+    seats: {type: Number, default:''},
     timeCreated: { type: Date, default: Date.now }
   });
 
