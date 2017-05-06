@@ -21,6 +21,13 @@
                 <label class="control-label">Address:</label>
                 <input type="text" name="address" id="address" class="form-control" ng-model="classObj.address">
             </div>
+            <div class="form-group" >
+                <label class="control-label">Active:</label>
+                <select name="active" id="active" class="form-control" ng-model="classObj.active">
+                    <option value="yes" ng-selected="{{classObj.active == 'Yes'? true : false}}" ng-value="yes">Yes</option>
+                    <option value="no" ng-selected="{{classObj.active == 'No'? true : false}}" ng-value="no">No</option>
+                </select>
+            </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">Save</button>
             </div>
